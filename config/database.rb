@@ -13,6 +13,9 @@
 #     :socket    => '/tmp/mysql.sock'
 #   }
 #
+
+postgres = URI.parse(ENV['DATABASE_URL'] || '')
+
 ActiveRecord::Base.configurations[:development] = {
   :adapter   => 'postgresql',
   :database  => 'herokuleech_development',
@@ -22,8 +25,6 @@ ActiveRecord::Base.configurations[:development] = {
   :port      => 5432
 
 }
-
-postgres = URI.parse(ENV['DATABASE_URL'] || '')
 
 ActiveRecord::Base.configurations[:production] = {
   :adapter   => 'postgresql',
