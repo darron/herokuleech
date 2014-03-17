@@ -7,7 +7,7 @@
     <![endif]-->
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name=viewport content='width=device-width,initial-scale=1' />
-    <title><%= @title.present? ? "#{@title} | Padrino Admin" : "Padrino Admin" %></title>
+    <title><%= @title.present? ? "#{@title} | Padrino Admin" : "Heroku Leech" %></title>
     <%= favicon_tag "favicon.ico" %>
     <link href='http://fonts.googleapis.com/css?family=Varela' rel=stylesheet />
     <%= stylesheet_link_tag 'bootstrap', 'application' %>
@@ -16,7 +16,7 @@
     <div class="navbar navbar-fixed-top">
       <div class=navbar-inner>
         <div class=container>
-          <%= link_to 'Padrino', url(:base, :index), :class => 'navbar-brand', :title => 'Padrino Admin' %>
+          <%= link_to 'Heroku Leech', url(:base, :index), :class => 'navbar-brand', :title => 'Heroku Leech' %>
           <ul class="nav navbar-nav pull-right">
             <li class=navbar-edit-account><%= link_to tag_icon(:user), url(:accounts, :edit, :id => current_account.id), :title => pat(:profile), :class => 'navbar-nav-link' %></li>
             <li class=navbar-logout>
@@ -49,13 +49,7 @@
 
     <footer>
       <div class='footer-wrapper container'>
-        <p class='pull-left'>Copyright &copy; 2014 Your Site - Powered by Padrino v.0.12.0</p>
-        <ul class='pull-right footer-links'>
-          <li><%= link_to tag_icon(:home, 'web'), 'http://www.padrinorb.com', :target => :_blank, :class => 'footer-links-link' %></li>
-          <li><%= link_to tag_icon(:heart, 'blog'), 'http://www.padrinorb.com/blog', :target => :_blank, :class => 'footer-links-link' %></li>
-          <li><%= link_to tag_icon(:github, 'code'), 'https://github.com/padrino/padrino-framework', :target => :_blank, :class => 'footer-links-link' %></li>
-          <li><%= link_to tag_icon(:twitter, 'twitter'), 'http://twitter.com/padrinorb', :target => :_blank, :class => 'footer-links-link' %></li>
-        </ul>
+        <p class='pull-left'>Copyright &copy; 2014 Heroku Leech - Powered by Padrino v.0.12.0</p>
       </div>
     </footer>
 
