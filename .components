@@ -1,0 +1,10 @@
+---
+:orm: activerecord
+:test: rspec
+:mock: none
+:script: jquery
+:renderer: erb
+:stylesheet: scss
+:namespace: Herokuleech
+:migration_format: number
+:admin_renderer: erb
